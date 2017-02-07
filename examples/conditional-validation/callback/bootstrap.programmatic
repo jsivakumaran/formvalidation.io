@@ -52,7 +52,7 @@ $(document).ready(function() {
                 otherChannel: {
                     validators: {
                         callback: {
-                            message: 'Please specific the channel',
+                            message: 'Please specify the channel',
                             callback: function(value, validator, $field) {
                                 var channel = $('#surveyForm').find('[name="channel"]:checked').val();
                                 return (channel !== 'other') ? true : (value !== '');
